@@ -38,7 +38,7 @@ export default function App() {
               <View style={styles.techsContainer}>
                 {repository.techs.map(tech => (
                   <Text key={tech} style={styles.tech}>
-                    ReactJS
+                    {tech}
                   </Text>
                 ))}
               </View>
@@ -54,7 +54,7 @@ export default function App() {
 
               <TouchableOpacity
                 style={styles.button}
-                onPress={() => handleLikeRepository(1)}
+                onPress={() => handleLikeRepository(repository.id)}
                 testID={`like-button-${repository.id}`}
               >
                 <Text style={styles.buttonText}>Curtir</Text>
