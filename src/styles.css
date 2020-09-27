@@ -1,4 +1,4 @@
-export const styles = StyleSheet.create({
+root: StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#7159c1",
